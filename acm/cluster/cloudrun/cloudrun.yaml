@@ -1,0 +1,12 @@
+ apiVersion: operator.run.cloud.google.com/v1alpha1
+ kind: CloudRun
+ metadata:
+   name: cloud-run
+ spec:
+   metricscollector:
+     stackdriver:
+       projectid: PROJECT_ID
+       gcpzone: GCP_ZONE
+       clustername: CLUSTER_NAME
+       secretname: cloudrun-metrics-gsa
+       secretkey: key.json

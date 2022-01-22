@@ -31,3 +31,4 @@ override.tf.json
 # Personal settings
 .vscode/
 terraform.tfvars
+.terraform.lock.hcl

@@ -9,3 +9,9 @@ module "cloudrun_gsa" {
     "${var.project_id}=>roles/monitoring.metricWriter",
   ]
 }
+
+resource "null_resource" "enable_cloudrun" {
+  provisioner "local-exec" {
+    command = "gcloud container hub cloudrun enable --project=${var.project_id}"
+  }
+}

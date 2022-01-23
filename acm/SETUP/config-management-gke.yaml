@@ -8,7 +8,7 @@ spec:
   sourceFormat: hierarchy
   clustername: gke
   git:
-    syncRepo: https://github.com/Markieta/terraform-acm-anthos-cloudrun.git # Use Cloud Source Repositories for private cluster
+    syncRepo: https://github.com/Markieta/terraform-acm-anthos-cloudrun.git # Use Cloud Source Repositories for private cluster. May require ecdsa. May have trouble connecting, password auth for testing/workaround.
     syncBranch: main
-    secretType: none
+    secretType: none # Use ssh with Cloud Source Repositories
     policyDir: "acm"

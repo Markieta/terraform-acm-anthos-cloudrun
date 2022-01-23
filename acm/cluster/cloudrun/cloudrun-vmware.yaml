@@ -2,6 +2,8 @@
  kind: CloudRun
  metadata:
    name: cloud-run
+   annotations:
+     configmanagement.gke.io/cluster-selector: selector-plat-vmware
  spec:
    metricscollector:
      stackdriver:

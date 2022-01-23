@@ -1,0 +1,13 @@
+apiVersion: configmanagement.gke.io/v1
+kind: ConfigManagement
+metadata:
+  name: config-management
+spec:
+  # Use spec.git for generating a RootSync resource in multi-repo mode
+  enableLegacyFields: false
+  sourceFormat: hierarchy
+  git:
+    syncRepo: https://github.com/Markieta/terraform-acm-anthos-cloudrun.git
+    syncBranch: main
+    secretType: none
+    policyDir: "acm"

@@ -6,7 +6,7 @@ spec:
   # Use spec.git for generating a RootSync resource in multi-repo mode
   enableLegacyFields: false
   sourceFormat: hierarchy
-  clustername: gke
+  clusterName: gke
   git:
     syncRepo: https://github.com/Markieta/terraform-acm-anthos-cloudrun.git # Use Cloud Source Repositories for private cluster. May require ecdsa. May have trouble connecting, password auth for testing/workaround.
     syncBranch: main

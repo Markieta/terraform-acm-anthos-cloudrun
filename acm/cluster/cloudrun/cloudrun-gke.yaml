@@ -7,10 +7,10 @@
  spec:
    clusterConfig:
     isPrivate: true
-   metricscollector:
-     stackdriver:
-       projectid: PROJECT_ID
-       gcpzone: GCP_ZONE
-       clustername: CLUSTER_NAME
-       secretname: cloudrun-metrics-gsa
-       secretkey: key.json
+#   metricscollector:
+#     stackdriver:
+#       projectid: PROJECT_ID
+#       gcpzone: GCP_ZONE
+#       clustername: CLUSTER_NAME
+#       secretname: cloudrun-metrics-gsa
+#       secretkey: key.json

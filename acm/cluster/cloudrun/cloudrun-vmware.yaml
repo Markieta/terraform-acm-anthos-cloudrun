@@ -4,11 +4,11 @@
    name: cloud-run
    annotations:
      configmanagement.gke.io/cluster-selector: selector-plat-vmware
- spec:
-   metricscollector:
-     stackdriver:
-       projectid: PROJECT_ID
-       gcpzone: GCP_ZONE
-       clustername: CLUSTER_NAME
-       secretname: cloudrun-metrics-gsa
-       secretkey: key.json
+# spec:
+#   metricscollector:
+#     stackdriver:
+#       projectid: PROJECT_ID
+#       gcpzone: GCP_ZONE
+#       clustername: CLUSTER_NAME
+#       secretname: cloudrun-metrics-gsa
+#       secretkey: key.json

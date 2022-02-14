@@ -1,14 +1,14 @@
- apiVersion: operator.run.cloud.google.com/v1alpha1
- kind: CloudRun
- metadata:
-   name: cloud-run
-   annotations:
-     configmanagement.gke.io/cluster-selector: selector-plat-vmware
-# spec:
-#   metricscollector:
-#     stackdriver:
-#       projectid: PROJECT_ID
-#       gcpzone: GCP_ZONE
-#       clustername: CLUSTER_NAME
-#       secretname: cloudrun-metrics-gsa
-#       secretkey: key.json
+apiVersion: operator.run.cloud.google.com/v1alpha1
+kind: CloudRun
+metadata:
+  name: cloud-run
+  annotations:
+    configmanagement.gke.io/cluster-selector: selector-plat-vmware
+spec:
+  metricscollector:
+    stackdriver:
+      projectid: arctiq-anthos
+      gcpzone: northamerica-northeast1
+      clustername: arctiqchris-homelab-uc1
+      secretname: cloudrun-metrics-gsa
+      secretkey: key.json

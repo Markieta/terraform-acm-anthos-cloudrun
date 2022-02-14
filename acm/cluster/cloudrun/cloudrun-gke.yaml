@@ -1,11 +1,11 @@
- apiVersion: operator.run.cloud.google.com/v1alpha1
- kind: CloudRun
- metadata:
-   name: cloud-run
-   annotations:
-     configmanagement.gke.io/cluster-selector: selector-plat-gke
- spec:
-   clusterConfig:
+apiVersion: operator.run.cloud.google.com/v1alpha1
+kind: CloudRun
+metadata:
+  name: cloud-run
+  annotations:
+    configmanagement.gke.io/cluster-selector: selector-plat-gke
+spec:
+  clusterConfig:
     isPrivate: true
 #   metricscollector:
 #     stackdriver:
